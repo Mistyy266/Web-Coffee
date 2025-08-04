@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Coffee Shop Bahari</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#listCoffee">LIST COFFEE</a></li>
+            </ul>
+        </nav>
+        <button class="btn-nav"><a href="login.html" class="btn-login">Login</a></button>
+    </header>
+    <div class="container" id="home">
+        <div class="wrap">
+            <h2 class="kutipan">“Hidup dapat diibaratkan seperti secangkir kopi hitam.</br> Dimana rasa manis dan pahit akan bertemu di dalam sebuah kehangatan.”</h2>
+            <img src="coffee-navbar.webp" alt="foto coffee" class="coffee-navbar"/>
+        </div>
+    </div>
+    <div class="list-coffee" id="listCoffee">
+        <div class="menu">
+            <h2 class="list-info">List Coffee yang tersedia di kedai ini</h2>
+            <div class="jenis-kopi">
+                <div class="kopi1">
+                    <img src="kopi-espresso.webp" alt="kopi espresso" class="kopi-espresso"/>
+                    <p class="nama-kopi">Coffee Espresso</p>
+                    <p class="harga-espresso">Harga: Rp. 15.000,00</p>
+                    <button class="btn-pesen" onclick="pesan()" >PESAN</button>
+                </div>
+                <div class="kopi2">
+                    <img src="americano.jpg" alt="kopi americano" class="kopi-americano"/>
+                    <p class="nama-kopi">Coffee Americano</p>
+                    <p class="harga-espresso">Harga: Rp. 15.000,00</p>
+                    <button class="btn-pesen">PESAN</button>
+                </div>
+                <div class="kopi3">
+                    <img src="Cappuchino.jpeg" alt="kopi Cappuchino" class="kopi-cappuchino"/>
+                    <p class="nama-kopi">Coffee Cappuchino</p>
+                    <p class="harga-espresso">Harga: Rp. 15.000,00</p>
+                    <button class="btn-pesen">PESAN</button>
+                </div>
+            </div>
+        </div>
+        <button onclick="scrollToTop()" id="scrollBtn">⬆️</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

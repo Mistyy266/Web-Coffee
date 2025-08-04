@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login cofee shop</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .forum-login {
+        background-color: #e3c8a8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 20px;
+        height: 300px;
+    }
+    .forum-login input {
+        margin: 10px;
+        padding: 8px;
+        border-radius: 20px;
+    }
+    #bg-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+</style>
+<body>
+    <div class="login">
+        <div class="forum-login">
+            <h1>Silahkan login disini</h1>
+            <input type="text" id="username" placeholder="username"/>
+            <input type="password" id="password" placeholder="password"/>
+            <p>Tidak ada akun? <a href="#">Registrasi disini!</a></p>    
+        </div>
+    </div>
+    <video autoplay muted loop id="bg-video">
+        <source src="144590-785095798.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

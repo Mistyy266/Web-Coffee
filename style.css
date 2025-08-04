@@ -1,0 +1,276 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'carose-sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #4e3629;
+    color: #e3c8a8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover {
+    color: #c58c57;
+}
+
+nav ul {
+    display: flex;
+    padding: 15px;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+a {
+    color: #e3c8a8;
+    text-decoration: none;
+    transition: all .5s ease 0s;
+}
+
+a:hover {
+    color: #c58c57;
+}
+
+.btn-nav {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 5px 12px;
+    background-color: #e3c8a8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-nav:hover {
+    background-color: #c58c57;
+    transition: all .5s ease-in-out;
+}
+
+.btn-login {
+    color:  #4e3629;
+}
+
+.btn-login:hover {
+    color:  #4e3629;
+}
+
+.container {
+    background-color: #e3c8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 10px 10px #4e3629;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.coffee-navbar {
+    width: 60%;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.kutipan {
+    color: #4e3629;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+}
+
+.list-coffee {
+    display: flex;
+    justify-content: center;
+    height: 150vh;
+    background-color: #4e3629;
+}
+
+.menu {
+    margin-top: 20px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px #e3c8a8;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+
+.list-info {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #4e3629;
+}
+
+.jenis-kopi {
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+}
+
+.kopi1 {
+}
+
+.kopi2 {
+}
+
+.kopi3 {
+}
+
+
+.harga-espresso {
+    color: #c58c57;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.btn-pesen {
+    border: none;
+    background-color: #4e3629;
+    color: #e3c8a8;
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 10px ;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.btn-pesen:hover {
+    background-color: #c58c57;
+    transition: all .3s ease-in-out;
+}
+
+.kopi-espresso {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 3px #c58c57;
+}
+
+.kopi-americano {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 3px #c58c57;
+}
+
+.kopi-cappuchino {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px 3px #c58c57;
+}
+
+.nama-kopi {
+    color: #c58c57;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#scrollBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 15px;
+    font-size: 18px;
+    display: none;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  .btn-nav {
+    margin-top: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .wrap {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .coffee-navbar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .list-coffee {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .jenis-kopi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kopi1, .kopi2, .kopi3 {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .nama-kopi {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .harga-espresso {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .btn-pesen {
+    display: block;
+    margin: 10px auto;
+  }
+}
